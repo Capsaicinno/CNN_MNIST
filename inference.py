@@ -62,3 +62,4 @@ plt.text(0.95,0.95, f'{predicted_label}',
         color='red', fontsize=20, fontweight='bold',
         horizontalalignment='right', verticalalignment='top')
 plt.show()
+print("show")
