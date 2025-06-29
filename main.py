@@ -5,7 +5,7 @@ from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 
-class SimpleCNN(nn.Module):
+class SimpleCNN(nn.Module): #nn.module is the base class for all neural network modules in PyTorch
     def __init__(self):
         super(SimpleCNN, self).__init__()
         self.conv_layers = nn.Sequential(
