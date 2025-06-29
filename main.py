@@ -25,7 +25,7 @@ class SimpleCNN(nn.Module): #nn.module is the base class for all neural network 
 
     def forward(self, x):
         x = self.conv_layers(x)
-        x = x.view(-1,32 * 7 * 7)
+        x = x.view(-1,32 * 7 * 7) #Flatten the tensor
         x = self.fc_Layers(x)
         return x
 def train(model, loader, optimizer, criterion, epoch):
